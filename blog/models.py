@@ -22,18 +22,20 @@ class BlogPage(Page):
     date = models.DateField("Post date")
     intro = models.CharField(max_length=250)
     body = RichTextField(blank=True)
-    content_panels = Page.content_panels + [
-        FieldPanel('date'),
-        FieldPanel('intro'),
-        FieldPanel('body', classname="full"),
-        ImageChooserPanel('image'),
-    ]
-    
     image = models.ForeignKey(
-    'wagtailimages.Image',
-    null=True,
-    blank=True,
-    on_delete=models.SET_NULL
+        'wagtailimages.Image',
+        null=True,
+        blank=True,
+        on_delete=models.SET_NULL
 )
     
 
+    content_panels = Page.content_panels + [
+        ImageChooserPanel('image'),
+        FieldPanel('date'),
+        FieldPanel('intro'),
+        FieldPanel('body', classname="full"),
+        
+    ]
+    
+   

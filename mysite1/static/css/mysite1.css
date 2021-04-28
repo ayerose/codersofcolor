@@ -1,3 +1,7 @@
 body {
-  background: black;
+  background: #caf0f8;
+}
+
+.container {
+    margin-left: 100px;
 }
