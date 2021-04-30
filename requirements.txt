@@ -3,7 +3,7 @@ asgiref==3.3.4
 beautifulsoup4==4.8.2
 boto3==1.17.59
 botocore==1.20.60
-buckup==0.1a4
+buckup==0.1a2
 certifi==2020.12.5
 chardet==4.0.0
 dj-database-url==0.5.0
@@ -11,6 +11,7 @@ dj-static==0.0.6
 Django==3.1.8
 django-filter==2.4.0
 django-modelcluster==5.1
+django-storages==1.11.1
 django-taggit==1.4.0
 django-treebeard==4.5.1
 djangorestframework==3.12.4
